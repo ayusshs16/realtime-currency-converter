@@ -1,0 +1,158 @@
+/* CSS File */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    transition: background 0.4s;
+}
+
+.container {
+    width: 320px;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.dark-toggle {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+#title {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#coinSticker {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin: 16px auto;
+    border-radius: 10px;
+}
+
+#userValue {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.selecterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+}
+
+.selecterContainer select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 45%;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+#switchCurrency {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#status {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #777;
+    text-transform: capitalize;
+}
+
+#btn {
+    width: 100%;
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #019875;
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(0, 184, 148, 0.2);
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: linear-gradient(135deg, #2d3436, #000000);
+}
+
+.dark-mode .container {
+    background-color: #1e272e;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.dark-mode #title,
+.dark-mode #status,
+.dark-mode #result {
+    color: #dfe6e9;
+}
+
+.dark-mode input,
+.dark-mode select {
+    background-color: #2f3640;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark-mode #btn {
+    background-color: #0984e3;
+}
+
+.dark-mode #btn:hover {
+    background-color: #74b9ff;
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.1);
+}
